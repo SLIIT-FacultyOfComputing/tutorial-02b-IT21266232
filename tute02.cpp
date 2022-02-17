@@ -42,3 +42,36 @@ int main()
   
    return 0;
 }
+
+
+#include <iostream>
+int main ()
+{
+    int type,otHrs;
+    float salary,netSalary = 0,otRate;
+    
+    std::cout <<"Enter your type:";
+    std::cin >> type;
+    
+    std::cout << "Enter your salary:";
+    std::cin >> salary;
+    
+    std::cout << "Enter OtHrs:";
+    std::cin >> otHrs;
+    
+    switch(type)
+    {
+        case 1:otRate = 1000.00;
+            break;
+        case 2:otRate = 1500.00;
+            break;
+        default:otRate = 1700.00;
+            
+        
+    }
+    
+    netSalary = salary + otRate *otHrs;
+    std::cout << "Net salary is:" << netSalary;
+
+    return 0;
+}
