@@ -21,3 +21,19 @@ int main()
     printf("Factorial of %d is %ld\n", no, fac);  
     return 0;
 }
+
+#include <iostream>
+int main ()
+{
+    int Number,fac =1;
+    
+    std::cout << "Enter your number:";
+    std::cin >> Number;
+    
+    for(int count = Number;count > 0;count--)
+    {
+        fac *= count;
+    }
+    
+    std::cout << "The factorial is:" << fac;
+}
